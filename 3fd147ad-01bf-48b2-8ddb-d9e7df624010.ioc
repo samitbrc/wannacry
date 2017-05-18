@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="3fd147ad-01bf-48b2-8ddb-d9e7df624010" last-modified="2017-05-17T09:57:14" xmlns="http://schemas.mandiant.com/2010/ioc">
+  <short_description>wannacry</short_description>
+  <description>To detect wannacry footprint</description>
+  <authored_by>samit</authored_by>
+  <authored_date>2017-05-15T08:56:24</authored_date>
+  <links />
+  <definition>
+    <Indicator operator="OR" id="7972edc9-f51e-4ec5-bdb4-22a537a957e0">
+      <IndicatorItem id="1778c48a-708f-49b7-9f70-e9edb2f17716" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">9c7c7149387a1c79679a87dd1ba755bc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2233906d-348c-4350-b1a4-75df4a8902d4" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">7bf2b57f2a205768755c07f238fb32cc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c1b92a5b-f147-4f47-900f-adc1c5233b10" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">84c82835a5d21bbcf75a61706d8ab549</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6e5a4957-a788-46fb-912a-fd4a4218d541" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">4fef5e34143e646dbf9907c4374276f5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1e8c32c6-50e2-4b32-8a87-2772b3ec5725" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">db349b97c37d22f5ea1d1841e3c89eb4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="94983a37-4fa1-4b1e-9352-560cff3e06f6" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">8495400f199ac77853c53b5a3f278f3e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="eb32120d-e2dc-4ecb-87ff-986b3d9b46c0" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">e889544aff85ffaf8b0d0da705105dee7c97fe26</Content>
+      </IndicatorItem>
+      <IndicatorItem id="de168656-5994-4861-a241-2d4b616e2338" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">51e4307093f8ca8854359c0ac882ddca427a813c</Content>
+      </IndicatorItem>
+      <IndicatorItem id="fdfe3b1a-068c-4fc8-bf28-4b8fbfdf04e6" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">af7db69cbaa6ab3e4730af8763ae4bf7b7c0c9b2</Content>
+      </IndicatorItem>
+      <IndicatorItem id="55c36cf0-c562-42fe-8170-26ec0e58847f" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">14249e7fb3fb6f4b363c47d5aae9f46dab2083c1</Content>
+      </IndicatorItem>
+      <IndicatorItem id="863730cd-3768-4304-a0c1-8915975627ae" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">61b9ae415fbe95bf4e6c616ce433cd20dce7dfe3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3fd9ad3e-2431-4ba3-921a-35882e919732" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">c5e6c97e27331b6d38717e156ba89df1387d94f7</Content>
+      </IndicatorItem>
+      <IndicatorItem id="09e8011d-9d50-4864-81e4-d619811f3a37" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">df815d6a5fbfc135d588bf8f7e9d71319aef2a8d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="323e114f-deaf-4492-b7bb-0f597c770312" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">90873b0d61ab387d4f95a79407a0bdec7ff06896</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e91d40ec-bdf0-4cbf-b663-a896ed61153e" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">8ddc724558a9bad2e516402f34523e28c666f222</Content>
+      </IndicatorItem>
+      <IndicatorItem id="52451fa5-68f1-44c3-a1b1-5014bfda2904" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">1e4858d9a807ddaa791516d3b7a9272eb8d8ab82</Content>
+      </IndicatorItem>
+      <IndicatorItem id="74bfd926-e446-4c42-addf-c528bc6d27de" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">50049556b3406e07347411767d6d01a704b6fee6</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3f15f1fe-e13c-49af-94b8-bc48f50a9b64" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">b9ce098e5172542fc9c76d62848b2e9291af46be</Content>
+      </IndicatorItem>
+      <IndicatorItem id="57ae23d3-aab6-45b8-9694-bcde306b36ab" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">69ac81a5f69653ac16be7d95e736816902813e85</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a48fa608-8e62-44c9-87a5-2aa84101e1fd" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">571dfbe51a38dc94585a2f35c9b4e426d187a0f3</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e7725c1b-0ae7-4ec6-a70b-4775df0625fc" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">eea7386f7b938c6785cf14221ad3f00516d271db</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5f6ab1cd-d27b-46b7-902e-5ddd30f3c105" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">e5356730123eddd45faab91de057a88d48c6651e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8df089f1-f8ac-47b2-94da-cd09c48bf8df" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">314c4704ed6a9871a86d3276b135195d05f154a4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c5c7bc3c-ddb8-467e-8306-30b0e63382f3" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">08e7f80c697d0b658c3d3a87272df630d76bbd01</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7537b4f5-6261-44ca-a436-83c59fd9de8f" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">51bfdd1eb973cd8fda5df33d916e74cb641d1d06</Content>
+      </IndicatorItem>
+      <IndicatorItem id="be7ae503-05d1-4fef-b534-f4d4508c8384" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">97222f83a6561fe54d5fa124f96158f79be64b44</Content>
+      </IndicatorItem>
+      <IndicatorItem id="64d2e437-3322-46ea-9be8-18db65401e6e" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">b4f80034fbb1769fccf3fd37253d61e32c821c61</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e0422346-784c-460e-9059-f38683c50661" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">e27fd07aba2b00eb189c5d968a9a552c88eee51d</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9a96f57b-8aac-4574-aad6-06a542b202ca" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">e16ca5d31964e7cffae1fc7940ef6aef840a90c9</Content>
+      </IndicatorItem>
+      <IndicatorItem id="45655047-0fd1-4683-8490-63f554980efa" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">4fef5e34143e646dbf9907c4374276f5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="744b3b11-b39e-4700-9313-7022e6af7980" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">7bf2b57f2a205768755c07f238fb32cc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="041d24d5-f7ea-4dad-a43f-603e7072e83b" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">8495400f199ac77853c53b5a3f278f3e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6ad9f4e0-051a-4043-8a40-ac55b6a7458d" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">84c82835a5d21bbcf75a61706d8ab549</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0407ffbd-23ed-45e2-934e-c674e5ea2388" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">9c7c7149387a1c79679a87dd1ba755bc</Content>
+      </IndicatorItem>
+      <IndicatorItem id="03cadafc-e676-468d-86a0-66202b2e3ac8" condition="is">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir" />
+        <Content type="md5">db349b97c37d22f5ea1d1841e3c89eb4</Content>
+      </IndicatorItem>
+      <Indicator operator="OR" id="967704c1-a487-4ef7-a836-48dbc7287f68">
+        <IndicatorItem id="f8943348-548f-4c22-99f3-c6792dd0f1f7" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">{410044004D0049004E0024}</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4b42d2b5-8fe6-4eb1-9bf1-7e6398605678" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">WannaDecryptor</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ba948bea-0b2b-42ef-b7d7-57f24cfc1654" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">WANNACRY</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3d4d1564-6221-4bf7-be9d-f743279c22ed" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">Microsoft Enhanced RSA and AES Cryptographic</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0c0035f5-d43b-4786-99cf-6e1a27168bd0" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">PKS</Content>
+        </IndicatorItem>
+        <IndicatorItem id="55d0fcd2-8fde-42d6-b6cb-bd5fc74a91e8" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">StartTask</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6783c3e4-83f0-4e01-b349-5283fc207538" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">wcry@123</Content>
+        </IndicatorItem>
+        <IndicatorItem id="baf536e2-593f-45aa-b7b6-74754bb7f68a" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">{2F6600002F72}</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b66f0d2e-5d06-4617-96e1-9f4ad526b307" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">unzip 0.15 Copyrigh</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7757ff4a-0fad-42b6-a9eb-014c54838180" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">Global\\WINDOWS_TASKOSHT_MUTEX</Content>
+        </IndicatorItem>
+        <IndicatorItem id="64ed5ba9-b366-4e6d-aae9-7a14d455e8cb" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">Global\\WINDOWS_TASKCST_MUTEX</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6e71cb5a-d144-421f-b1d6-23f28fe9c026" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">{7461736B736368652E657865000000005461736B5374617274000000742E776E7279000069636163}</Content>
+        </IndicatorItem>
+        <IndicatorItem id="24c61972-aa94-4ec5-9d81-6a133556b38d" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">{6C73202E202F6772616E742045766572796F6E653A46202F54202F43202F5100617474726962202B68}</Content>
+        </IndicatorItem>
+        <IndicatorItem id="cf8c3726-acc2-4047-8a48-9d082b1a14c4" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">WNcry@2ol7</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d54e8463-e33e-4ffa-b1e7-0dde0cde7164" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">wcry@123</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d8ae9cbe-aeae-4895-a6f4-411262441586" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">Global\\MsWinZonesCacheCounterMutexA</Content>
+        </IndicatorItem>
+        <IndicatorItem id="acedd8df-6a8f-4d18-a7ce-db84038efd82" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">3e6de9e2baacf930949647c399818e7a2caea2626df6a468407854aaa515eed9.bin</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d8040e03-d278-4ebb-bf72-54d4205b6071" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">taskmsgr.exe</Content>
+        </IndicatorItem>
+        <IndicatorItem id="49c70982-1e82-4475-9a09-2da8c01b74fe" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">Win32.Ransom.FileLocker@3e6de9e2baacf930949647c399818e7a2caea2626df6a468407854aaa515eed9.bin</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6bf636a1-7660-4c8c-ad04-91a25d57a0dd" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">e429724f89a2ae495f1bfba53bc23532.safe</Content>
+        </IndicatorItem>
+        <IndicatorItem id="51cdd947-80c1-4760-a483-3c924e8f8806" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">Message</Content>
+        </IndicatorItem>
+        <IndicatorItem id="95de0acd-7735-4b8f-94a7-1ebeeb950eac" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">@WanaDecryptor@.exe</Content>
+        </IndicatorItem>
+        <IndicatorItem id="87fa5c8a-ff89-4dfd-8645-dfefd3aa6d41" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">LODCTR.EXE</Content>
+        </IndicatorItem>
+        <IndicatorItem id="eb66217a-be65-4888-b77e-b5bfbcc1a338" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">localfile~</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1930d7b2-d6b4-459b-9481-cdd4c93de7ac" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">u.wnry</Content>
+        </IndicatorItem>
+        <IndicatorItem id="cd49e8f7-b4ea-4a55-b47e-41d758b04c6b" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">b9c5.bin</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1533449f-39c2-496f-b45b-d46a4dc9e1ca" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">B9C5D4339809E0AD9A00D4D3DD26FDF44A32819A54ABF846BB9B560D81391C25.dat</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a2fa5405-a0fe-43f3-a0dd-e2ed1b8d64bd" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">PC NETWORK PROGRAM 1.0</Content>
+        </IndicatorItem>
+        <IndicatorItem id="afd41e98-0a68-4aa0-8c76-9888feadf4aa" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">LANMAN1.0</Content>
+        </IndicatorItem>
+        <IndicatorItem id="38e6e9f1-a627-451b-8ee2-63476d7ed703" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">Windows for Workgroups 3.1a</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a402f292-e4d1-4960-b329-d6c998ef1f1d" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">__TREEID__PLACEHOLDER__</Content>
+        </IndicatorItem>
+        <IndicatorItem id="69a799e5-e83e-4d0a-91df-ea371c436c5e" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">__USERID__PLACEHOLDER__</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e0e82eae-5506-4536-9cfa-52cd4d4ccef0" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">h6agLCqPqVyXi2VSQ8O6Yb9ijBX54j</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ca162294-a1f2-44ee-9c45-8f666e7b1048" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">h54WfF9cGigWFEx92bzmOd0UOaZlM</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ce835634-6c56-4b8d-a088-0a53842f2420" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">tpGFEoLOU6+5I78Toh/nHs/RAP</Content>
+        </IndicatorItem>
+        <IndicatorItem id="955cb240-02db-41d7-9594-550af10fd81c" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">@WanaDecryptor@.exe</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ec9b0a05-47f3-4ebf-8915-ba25ce57cf3e" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">300921484251324.bat</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8717c345-1470-47f6-9727-9c98b9c41376" condition="contains">
+          <Context document="FileItem" search="FileItem/StringList/string" type="mir" />
+          <Content type="string">5bef35496fcbdbe841c82f4d1ab8b7c2.exe</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="de75f4b1-091a-4193-a8fa-68f3db5648d6">
+        <IndicatorItem id="9e41d3ba-3c7e-449e-a6b7-9584638d11e6" condition="contains">
+          <Context document="FileItem" search="FileItem/FileExtension" type="mir" />
+          <Content type="string">.uiwix</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7e177def-6435-4559-ab9d-a025d229d740" condition="contains">
+          <Context document="FileItem" search="FileItem/FileExtension" type="mir" />
+          <Content type="string">wncryt</Content>
+        </IndicatorItem>
+        <IndicatorItem id="fa5bb2c8-a760-4661-806e-77f3ced56c59" condition="contains">
+          <Context document="FileItem" search="FileItem/FileExtension" type="mir" />
+          <Content type="string">wncry</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2f150cd4-f78f-4ac3-99a2-6d07445c78bf" condition="contains">
+          <Context document="FileItem" search="FileItem/FileExtension" type="mir" />
+          <Content type="string">wcry</Content>
+        </IndicatorItem>
+        <IndicatorItem id="496718ce-426f-44ca-b774-2215aaea3661" condition="contains">
+          <Context document="FileItem" search="FileItem/FileExtension" type="mir" />
+          <Content type="string">wncry</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e3d39e2d-6662-4321-aff9-373a468db158" condition="contains">
+          <Context document="FileItem" search="FileItem/FileExtension" type="mir" />
+          <Content type="string">wsfg</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="3db0eb6b-19c3-4166-a3c1-a937075021aa">
+        <IndicatorItem id="36f11e17-d74b-473c-a069-982e7a1ccf0c" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir" />
+          <Content type="string">5ff465afaabcbf0150d1a3ab2c2e74f3a4426467</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1b0b49a1-d722-4b2c-baac-faf7d0993312" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5c920ecf-cfba-4547-a006-0eb25fc96545" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a5de7e19-3f54-4e2c-9da0-e51336b4ba1b" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">dff26a9a44baa3ce109b8df41ae0a301d9e4a28ad7bd7721bbb7ccd137bfd696</Content>
+        </IndicatorItem>
+        <IndicatorItem id="02eb93a7-096f-4a09-9225-2ad7206440eb" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">201f42080e1c989774d05d5b127a8cd4b4781f1956b78df7c01112436c89b2c9</Content>
+        </IndicatorItem>
+        <IndicatorItem id="90abd9e2-aa2e-4f96-85d4-a526e5ae22c8" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa</Content>
+        </IndicatorItem>
+        <IndicatorItem id="71787da8-92f6-48a4-a08b-2373df073fc8" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">0345782378ee7a8b48c296a120625fd439ed8699ae857c4f84befeb56e727366</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c834f70f-e80c-4759-84d4-d4b816786566" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">78e3f87f31688355c0f398317b2d87d803bd87ee3656c5a7c80f0561ec8606df</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6280eea7-e2d0-4d27-97f7-a5a804e1e9cf" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">eeb9cd6a1c4b3949b2ff3134a77d6736b35977f951b9c7c911483b5caeb1c1fb</Content>
+        </IndicatorItem>
+        <IndicatorItem id="97eca647-3c3f-4513-a8b4-b077d18cfeab" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">57c12d8573d2f3883a8a0ba14e3eec02ac1c61dee6b675b6c0d16e221c3777f4</Content>
+        </IndicatorItem>
+        <IndicatorItem id="90ffa6b9-b0cb-4967-b4cf-dccff8ed37f5" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">dff26a9a44baa3ce109b8df41ae0a301d9e4a28ad7bd7721bbb7ccd137bfd696</Content>
+        </IndicatorItem>
+        <IndicatorItem id="80577d91-d27b-4cf7-b7e2-118895b3cd8e" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">a3900daf137c81ca37a4bf10e9857526d3978be085be265393f98cb075795740</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f4f38fe9-3d5a-4b5b-b9b4-827f6410222d" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">fc626fe1e0f4d77b34851a8c60cdd11172472da3b9325bfe288ac8342f6c710a</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b54cd243-bff7-4852-a072-ed11a1604953" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">201f42080e1c989774d05d5b127a8cd4b4781f1956b78df7c01112436c89b2c9</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d04d9602-e406-4e82-83bc-4dd1aa55c3e7" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">ca29de1dc8817868c93e54b09f557fe14e40083c0955294df5bd91f52ba469c8</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6b510d0d-34a9-42a7-925a-45c2f00edf2a" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">dceef54e6670388c81b5a8b8583d5e7c5245ce4dd40a83439afeb4f14693367d </Content>
+        </IndicatorItem>
+        <IndicatorItem id="8ab1f3b5-26d7-4a1c-8968-4b75677f3173" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">80457fd3c283b3da95ee8e9cb62c28c51a05ca6b1b03f84c3737de2d951d17cd </Content>
+        </IndicatorItem>
+        <IndicatorItem id="58310c75-d6c7-4356-a054-036be38443f5" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">b3dd5de8b6a2785fa60bb6f08677b21e3e86384790360dda33229f6577faf1f1 </Content>
+        </IndicatorItem>
+        <IndicatorItem id="27414f70-efed-4e43-9406-935a92382f6c" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">ce301e0574c3ad50e06add9e619649b4e82e20725d106e6364285b4808c7ba4d </Content>
+        </IndicatorItem>
+        <IndicatorItem id="0bdb2892-21d3-43d7-96c0-e4d256444e7a" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">771bdd4d742c1540a891fbf5de0770974cea6ba5e5a19f4aea06f8c1a87160ab </Content>
+        </IndicatorItem>
+        <IndicatorItem id="0bf1252e-1d32-4a36-a7e8-0d927fef5470" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">1c0911e734aff3fea0499195d4d4c5f920027ac1ef341a64989a1ed67dd3aadf</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a4642297-7d02-4a85-a9d2-94387928cac4" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">043e0d0d8b8cda56851f5b853f244f677bd1fd50f869075ef7ba1110771f70c2</Content>
+        </IndicatorItem>
+        <IndicatorItem id="de6c160f-42ee-4a64-ad51-564db655954e" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">9fb39f162c1e1eb55fbf38e670d5e329d84542d3dfcdc341a99f5d07c4b50977</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e42d9e93-4982-440a-827a-a55b9f54421c" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">3f3a9dde96ec4107f67b0559b4e95f5f1bca1ec6cb204bfe5fea0230845e8301</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9d05c584-0b93-474f-88cf-1d6a593f7df9" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">eeb9cd6a1c4b3949b2ff3134a77d6736b35977f951b9c7c911483b5caeb1c1fb</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3799a49e-7802-4fec-a76d-771213f2f2dc" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">09a46b3e1be080745a6d8d88d6b5bd351b1c7586ae0dc94d0c238ee36421cafa</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6fdadb61-f013-4772-ad02-d594f8eccfc0" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">4186675cb6706f9d51167fb0f14cd3f8fcfb0065093f62b10a15f7d9a6c8d982</Content>
+        </IndicatorItem>
+        <IndicatorItem id="46c9b24f-9b2a-4a9c-905e-f943c1d82b23" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">b66db13d17ae8bcaf586180e3dcd1e2e0a084b6bc987ac829bbff18c3be7f8b4</Content>
+        </IndicatorItem>
+        <IndicatorItem id="29e80d32-3951-45f4-9c46-4599d2823cdb" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">940dec2039c7fca4a08d08601971836916c6ad5193be07a88506ba58e06d4b4d</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a04d4e39-4628-4070-956d-0ca6fbef24e5" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">b9c5d4339809e0ad9a00d4d3dd26fdf44a32819a54abf846bb9b560d81391c25</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ce082834-fb98-433a-b234-3489bd5d35fa" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">dff26a9a44baa3ce109b8df41ae0a301d9e4a28ad7bd7721bbb7ccd137bfd696</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e5077f2e-f47d-4ad5-8d58-ea6e1d99a8d5" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">fc626fe1e0f4d77b34851a8c60cdd11172472da3b9325bfe288ac8342f6c710a</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f2e2a1c7-639e-4bcc-a335-7a6ec62746d8" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">09a46b3e1be080745a6d8d88d6b5bd351b1c7586ae0dc94d0c238ee36421cafa</Content>
+        </IndicatorItem>
+        <IndicatorItem id="cad1a09b-83d6-4358-b836-069a889a5e97" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">201f42080e1c989774d05d5b127a8cd4b4781f1956b78df7c01112436c89b2c9</Content>
+        </IndicatorItem>
+        <IndicatorItem id="18715799-2686-428b-bfe5-f848fd37bf2d" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">11d0f63c06263f50b972287b4bbd1abe0089bc993f73d75768b6b41e3d6f6d49</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f972bc7f-08f4-493c-9132-4fc898d80a6c" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">c365ddaa345cfcaff3d629505572a484cff5221933d68e4a52130b8bb7badaf9</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9867a879-23a2-4430-8b7a-39522ef8501c" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">a3900daf137c81ca37a4bf10e9857526d3978be085be265393f98cb075795740</Content>
+        </IndicatorItem>
+        <IndicatorItem id="932e91ce-2c8f-4fea-bb9e-861a089146a1" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa</Content>
+        </IndicatorItem>
+        <IndicatorItem id="67e2d569-2054-4440-8c09-b6453cac9613" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">78e3f87f31688355c0f398317b2d87d803bd87ee3656c5a7c80f0561ec8606df</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="fd548dd9-c2d6-4e45-9791-7f9d8520ae37">
+        <IndicatorItem id="a3b3bb8c-8a98-45c9-ae24-8f22a244d7fc" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">217.182.172.139</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3d16d56b-cb68-41c2-b6b9-f2a477a866d7" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">82.165.142.107</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d4f5a5dd-ac02-48de-b002-3b0e7237df31" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">62.138.10.60</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5a148f25-7fe2-4d1d-be46-4dd7b3074e44" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">82.94.251.227</Content>
+        </IndicatorItem>
+        <IndicatorItem id="42e9d1a1-bcea-4bc7-8e03-a0ab474ab453" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">213.239.216.222</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7719149d-19da-4b8a-ba4f-b3e1faf31475" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">51.255.41.65</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b92b5c3a-1e68-42f5-858e-a7b24b40291d" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">86.59.21.38</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e5a4b49c-b70d-4f3d-94b0-159e4fdaa67c" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">198.199.64.217</Content>
+        </IndicatorItem>
+        <IndicatorItem id="848ff8fa-3ebf-4dee-bb35-44ced46d4006" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">83.169.6.12</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ac0c4b10-e6f7-4ec3-bc2e-6cac7e89f953" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">192.42.115.102</Content>
+        </IndicatorItem>
+        <IndicatorItem id="70914ab3-c720-406d-b9ea-3ce0386ec2d2" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">104.131.84.119</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a5036b4f-0376-4425-a0af-2d7a3697fec3" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">178.254.44.135</Content>
+        </IndicatorItem>
+        <IndicatorItem id="fae09a8a-ed75-414f-878e-f339bf1d8b65" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">163.172.25.118</Content>
+        </IndicatorItem>
+        <IndicatorItem id="43dcf065-d260-4352-ba9d-f960a1445241" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">188.166.23.127</Content>
+        </IndicatorItem>
+        <IndicatorItem id="18551727-c0ba-44ff-ab70-1ff4db661283" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">193.23.244.244</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4d8508ac-89b6-49b8-8048-38e706d509a7" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">2.3.69.209</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0b53a914-9621-4f38-8a6f-dee719d85164" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">146.0.32.144</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3d4d4445-68e5-4df2-a15a-50cbd759e940" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">50.7.161.218</Content>
+        </IndicatorItem>
+        <IndicatorItem id="60859b59-2f89-4797-ac2e-33e60d1fa729" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">217.79.179.77</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7a009b9f-acfd-4ba4-b343-61e91514d623" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">128.31.0.39</Content>
+        </IndicatorItem>
+        <IndicatorItem id="698fd518-d0b3-4642-9cc0-f11a8703c228" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">213.61.66.116</Content>
+        </IndicatorItem>
+        <IndicatorItem id="bc668243-7ecf-486d-8a1d-39c02dc2c1b1" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">212.47.232.237</Content>
+        </IndicatorItem>
+        <IndicatorItem id="77800478-c64e-4bc6-a089-f0bcba3d0215" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">81.30.158.223</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c1cf90a4-48db-42d0-9b81-4f73a4bf1fa3" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">79.172.193.32</Content>
+        </IndicatorItem>
+        <IndicatorItem id="96081a0b-b91f-4d31-9784-f57f5e8e2a1e" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">89.45.235.21</Content>
+        </IndicatorItem>
+        <IndicatorItem id="22604f7f-d0fa-4c69-94b0-daae84469c57" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">38.229.72.16</Content>
+        </IndicatorItem>
+        <IndicatorItem id="46cd9038-d5fe-40d5-bb96-c79c162fdde3" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">188.138.33.220</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e010ef71-df06-4fef-95a6-9c4bd0543cad" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">197.231.221.221</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6ca0c651-ac7d-46f8-8c03-b55c8aec652c" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">149.202.160.69</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d15e88af-1818-4b63-b884-8dd88505dade" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">46.101.166.19</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a37522ee-f469-41df-a2f4-d3447d1290c0" condition="contains">
+          <Context document="PortItem" search="PortItem/remoteIP" type="mir" />
+          <Content type="IP">91.121.65.179</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="aea08b9e-8d38-424e-ac7e-03f17ee2dfc7">
+        <IndicatorItem id="c899e60a-7bd3-4219-b673-80d236ad5a2e" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">http1.sinkhole.tech</Content>
+        </IndicatorItem>
+        <IndicatorItem id="39c61a5e-6d62-4093-b20a-56f3bdb4847b" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">s15415495.onlinehome-server.info</Content>
+        </IndicatorItem>
+        <IndicatorItem id="85e948cb-b395-4c45-8c82-63ec88753a0f" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">static-ip-62-138-10-60.inaddr.ip-pool.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5512a6bc-966e-4ec5-acfe-f9495aa99926" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">mail.calyx.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c7028a72-599c-43b7-84e9-6645ce6b11ba" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">tor-relay.zeroton.in</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b223101f-c70d-481a-a698-275928c5c828" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">65.ip-51-255-41.eu</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0dec0d22-998a-4fbc-bb49-c167f9df769c" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">tor.noreply.org</Content>
+        </IndicatorItem>
+        <IndicatorItem id="49470d57-9220-4b7d-ae11-7fe799212888" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">lvps83-169-6-12.dedicated.hosteurope.de</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b463033b-7d60-440d-b3ee-c351dc35da5e" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">onyx.ip-eend.nl</Content>
+        </IndicatorItem>
+        <IndicatorItem id="30b14f09-3c1d-40b1-ae02-615bc7250ff3" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">163-172-25-118.rev.poneytelecom.eu</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9bde3656-5152-4b82-82a6-1152cfab6b2a" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">dannenberg.torauth.de</Content>
+        </IndicatorItem>
+        <IndicatorItem id="fe70d570-7e89-4b55-a014-049496ba496e" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">LFbn-1-14687-209.w2-3.abo.wanadoo.fr</Content>
+        </IndicatorItem>
+        <IndicatorItem id="94b46604-2d4b-453a-82ae-eb3b37c5e9ed" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">tor.epow0.org</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0f7f7ca5-71f8-46d1-a59a-3e03a8aca822" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">belegost.csail.mit.edu</Content>
+        </IndicatorItem>
+        <IndicatorItem id="41bb5fef-aa4e-4ade-836e-b2c3ec398cad" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">237-232-47-212.rev.cloud.scaleway.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2661ac57-49cc-48b4-bca0-3aef3dff6331" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">kode-it.de</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d98f184f-d69c-42cd-8ccd-b409894cad6a" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">toreador.webenlet.hu</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b7c6de74-162a-4d62-b1ad-7d6e5fd45ade" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">weschniakowii.torproject.org</Content>
+        </IndicatorItem>
+        <IndicatorItem id="279df59a-523b-4707-99d2-bf703f3df28f" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">aroides.torproject.org</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0c49fb8c-35a1-4694-926a-4cd817582d37" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">loft9159.serverprofi24.de</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9121df83-5d42-4f3a-882d-2079db06eb05" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">host-197-231-221-221.resolv.to</Content>
+        </IndicatorItem>
+        <IndicatorItem id="aa1cac22-947a-4af2-b064-ee50c2159dcb" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">de-fra01.2bit.co</Content>
+        </IndicatorItem>
+        <IndicatorItem id="21c87294-a5b9-481d-8124-ee9a49dc92a0" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">ns3027527.ip-91-121-65.eu</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3354f0fa-43a5-4157-ac7b-d8418e143d9e" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">gx7ekbenv2riucmf.onion</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a5030437-d3d5-4763-95f6-39fd950b4246" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">57g7spgrzlojinas.onion</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b986d223-5a00-4f37-9d40-9b91b89cfbec" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">Xxlvbrloxvriy2c5.onion</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f6d78884-091a-4f45-983f-a2f3c0a626ed" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">76jdd2ir2embyv47.onion</Content>
+        </IndicatorItem>
+        <IndicatorItem id="eb8be9e1-3872-464f-aba7-75878c772303" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">cwwnhwhlz52maqm7.onion</Content>
+        </IndicatorItem>
+        <IndicatorItem id="26a88ce1-a181-4ff7-a7af-58c0b54f4e4d" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">sqjolphimrr7jqw6.onion</Content>
+        </IndicatorItem>
+        <IndicatorItem id="37dff9ac-75d5-4386-8ed2-3cdb89317f44" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">rentasyventas.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a4b5f017-f8ba-465d-afa9-5ae4514a1277" condition="contains">
+          <Context document="Network" search="Network/URI" type="mir" />
+          <Content type="string">www[.]iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="b624283f-242d-4920-ad38-6539500e6185">
+        <IndicatorItem id="02e90c89-6fd8-4f06-a265-1fcf64a0839f" condition="contains">
+          <Context document="FileItem" search="FileItem/FullPath" type="mir" />
+          <Content type="string">C:\Program Files\Common Files\System\Ransom:Win32.WannaCrypt.exe</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f9165654-73a2-4b12-b0d7-c098c09fbe9b" condition="contains">
+          <Context document="FileItem" search="FileItem/FullPath" type="mir" />
+          <Content type="string">C:\Program Files (x86)\Ransom:Win32.WannaCrypt\</Content>
+        </IndicatorItem>
+        <IndicatorItem id="993c9bc4-451c-4733-8112-24536184df29" condition="contains">
+          <Context document="FileItem" search="FileItem/FullPath" type="mir" />
+          <Content type="string">C:\ProgramData\TEMP\Ransom:Win32.WannaCrypt</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8d88e972-801e-444e-96fd-63aa735df4eb" condition="contains">
+          <Context document="FileItem" search="FileItem/FullPath" type="mir" />
+          <Content type="string">C:\Users\Default\AppData\Local\Temp\Ransom:Win32.WannaCrypt.exe</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d7ab3e65-ff64-4c8d-90d5-d9b81b08533c" condition="contains">
+          <Context document="FileItem" search="FileItem/FullPath" type="mir" />
+          <Content type="string">C:\Users\your user account\AppData\Roaming\Ransom:Win32.WannaCrypt</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2a914f32-201d-40ef-8637-b80606a25763" condition="contains">
+          <Context document="FileItem" search="FileItem/FullPath" type="mir" />
+          <Content type="string">C:\Windows\System32\drivers\Ransom:Win32.WannaCrypt.sys</Content>
+        </IndicatorItem>
+        <IndicatorItem id="fe17c15d-3d59-448b-9572-dce4706dc9f4" condition="contains">
+          <Context document="FileItem" search="FileItem/FullPath" type="mir" />
+          <Content type="string">C:\Windows\mssecsvc.exe</Content>
+        </IndicatorItem>
+        <IndicatorItem id="621b066d-fb73-4ba3-b008-546cbb4d28aa" condition="contains">
+          <Context document="FileItem" search="FileItem/FullPath" type="mir" />
+          <Content type="string">C:\WINDOWS\tasksche.exe</Content>
+        </IndicatorItem>
+        <Indicator operator="OR" id="f1796a69-d370-4c7e-b7b2-205038e5b8b0">
+          <IndicatorItem id="73311ef2-f24f-4c0f-a3c4-19c0f6799c2f" condition="contains">
+            <Context document="ServiceItem" search="ServiceItem/name" type="mir" />
+            <Content type="string">mssecsvc2.0</Content>
+          </IndicatorItem>
+        </Indicator>
+      </Indicator>
+      <Indicator operator="OR" id="34834a4e-a431-4b52-bdb8-7458c4c70a3d">
+        <IndicatorItem id="e118e612-3cd3-438e-a0fb-a0a4c8faa236" condition="contains">
+          <Context document="RegistryItem" search="RegistryItem/Path" type="mir" />
+          <Content type="string">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run "[random].exe"</Content>
+        </IndicatorItem>
+        <IndicatorItem id="02cab383-6a4b-4545-893b-3d0ad830063e" condition="contains">
+          <Context document="RegistryItem" search="RegistryItem/Path" type="mir" />
+          <Content type="string">HKEY_CLASSES_ROOT\CLSID\[ Ransom:Win32.WannaCrypt]</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2ed0c12c-dc40-4bb3-85e3-01cd253c4f29" condition="contains">
+          <Context document="RegistryItem" search="RegistryItem/Path" type="mir" />
+          <Content type="string">HKEY_CURRENT_USER\Software\AppDataLow\Software\ Ransom:Win32.WannaCrypt</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7fcd2ba1-2279-4fff-8086-19cf4262b829" condition="contains">
+          <Context document="RegistryItem" search="RegistryItem/Path" type="mir" />
+          <Content type="string">HKEY_CURRENT_USER\Software\ Ransom:Win32.WannaCrypt character</Content>
+        </IndicatorItem>
+        <IndicatorItem id="abba876d-832d-48a6-be12-644577137609" condition="contains">
+          <Context document="RegistryItem" search="RegistryItem/Path" type="mir" />
+          <Content type="string">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ Ransom:Win32.WannaCrypt</Content>
+        </IndicatorItem>
+        <IndicatorItem id="71bd1104-1cb2-4bc3-a023-ecdc0877083f" condition="contains">
+          <Context document="RegistryItem" search="RegistryItem/Path" type="mir" />
+          <Content type="string">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\BrowserHelperObjects\[random numbers]</Content>
+        </IndicatorItem>
+      </Indicator>
+    </Indicator>
+  </definition>
+</ioc>
